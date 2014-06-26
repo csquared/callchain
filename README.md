@@ -1,4 +1,4 @@
-# Callchain
+# CallChain
 
 Simple, composable pipelines with `::call` and `::use`
 
