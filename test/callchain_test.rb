@@ -91,7 +91,7 @@ class CallChainIncludeTest < Minitest::Test
   include CallChainTestTemplate
   def new_chain
     chain_class = Class.new
-    chain_class.include(CallChain)
+    chain_class.send(:include, CallChain)
     chain_class.new
   end
 end
