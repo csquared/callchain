@@ -72,6 +72,28 @@ Compose a CallChain of call chains because it exports `::call(object)`
   CompositeCallChain.call(Object.new)
 ```
 
+## CallChain::bind
+
+```ruby
+  class WrapToI
+    extend CallChain
+    use CallChain[:to_i]
+  end
+
+  WrapToI.call('1')
+  # => 1
+```
+
+```ruby
+  class WrapToI
+    extend CallChain
+    use CallChain.bind(:+, 1)
+  end
+
+  WrapToI.call(1)
+  # => 2
+```
+
 ## Contributing
 
 1. Fork it ( http://github.com/<my-github-username>/callchain/fork )
