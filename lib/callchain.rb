@@ -35,4 +35,12 @@ module CallChain
     end
     thing
   end
+
+  def self.[](key)
+    self.bind(key)
+  end
+
+  def self.bind(method_name, *args)
+    lambda { |thing| thing.send(method_name, *args) }
+  end
 end
