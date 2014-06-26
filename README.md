@@ -2,7 +2,7 @@
 
 Simple, composable pipelines with `::call` and `::use`
 
-[![Build Status](https://travis-ci.org/csquared/callchain.png)](https://travis-ci.org/csquared/callchain)
+[![Build Status](https://travis-ci.org/csquared/callchain.svg?branch=master)](https://travis-ci.org/csquared/callchain)
 
 ## Installation
 
