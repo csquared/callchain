@@ -1,6 +1,8 @@
 # Callchain
 
-TODO: Write a gem description
+Simple, composable pipelines with `::call` and `::use`
+
+[![Build Status](https://travis-ci.org/csquared/callchain.svg?branch=master)
 
 ## Installation
 
